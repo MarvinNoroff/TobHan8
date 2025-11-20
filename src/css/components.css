@@ -1,4 +1,4 @@
-@import url(_variables.css);
+@import url(variables.css);
 
 /* --- MUCH OF THIS CAN BE PLACED IN LAYOUTS AND TYPHOGRAFY SHEETS INSTEAD - FIX LATER ON --- */
 header .header-logo,
@@ -49,13 +49,13 @@ footer i:hover {
 
 /* --- FIXES SOCIAL ICON SIZE ON DIFFERENT SCREEN SIZES --- */
 .footer-socials i {
-    font-size: clamp(var(--footer-icon-min), 5vw, var(--footer-icon-max));
+  font-size: clamp(var(--footer-icon-min), 5vw, var(--footer-icon-max));
 }
 
 /* --- HOVER ANIMATION FOR SOCIALS --- */
 .footer-socials a:hover,
 .footer-socials i:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .hamburger-icon {
@@ -65,18 +65,19 @@ footer i:hover {
   margin-right: 0rem;
   font-size: 3rem;
   z-index: 30;
-  
 }
 
 /* HIDES CHECKBOX THAT TRIGGERS HAMBURGER MENU TO OPEN --- */
-#menu-checkbox { display: none;}
+#menu-checkbox {
+  display: none;
+}
 
 .sliders-container {
-    position: relative;
-    width: 100%;
-    height: clamp(250px, 25vh, 305px);
-    overflow: hidden;
-    margin-top: 0.8rem;
+  position: relative;
+  width: 100%;
+  height: clamp(250px, 25vh, 305px);
+  overflow: hidden;
+  margin-top: 0.8rem;
 }
 
 .sliders {
@@ -147,24 +148,24 @@ footer i:hover {
 }
 
 .slider-center-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    width: 48%;
-    max-width: 280px;
-    text-align: center;
-    pointer-events: none;
-    z-index: 25;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 48%;
+  max-width: 280px;
+  text-align: center;
+  pointer-events: none;
+  z-index: 25;
 }
 
 .slider-center-content .see-all {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .see-all {
@@ -199,7 +200,7 @@ footer i:hover {
 .dots label {
   width: 16px;
   height: 16px;
-  background: #BAE3F0;
+  background: #bae3f0;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
@@ -224,7 +225,7 @@ footer i:hover {
 
 .arrow:hover {
   background: var(--color-secondary);
-  color:  var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* --- ">" ARROW DATA ICONS FOR BUTTONS --- */
@@ -233,29 +234,39 @@ footer i:hover {
 }
 
 /* --- NAV ARROWS PLACEMENT FOR ITEM SHOWCASE --- */
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
+.arrow.left {
+  left: 10px;
+}
+.arrow.right {
+  right: 10px;
+}
 
 /* --- CONNECTS ARROWS WITH RADIO INPUT CHECKBOXES, ADDED !important; TO MAKE SURE CONTENT SHOWS CORRECT WAY--- */
 #slider-1:checked ~ .arrow-1-left,
 #slider-1:checked ~ .arrow-1-right {
-    display: flex !important;
+  display: flex !important;
 }
 
 #slider-2:checked ~ .arrow-2-left,
 #slider-2:checked ~ .arrow-2-right {
-    display: flex !important;
+  display: flex !important;
 }
 
 #slider-3:checked ~ .arrow-3-left,
 #slider-3:checked ~ .arrow-3-right {
-   display: flex !important;
+  display: flex !important;
 }
 
 /* --- DIRECTION OF SHOWCASE ANIMATION WHEN SLIDING HORIZONTALLY --- */
-#slider-1:checked ~ .sliders-container .sliders { transform: translateX(0); }
-#slider-2:checked ~ .sliders-container .sliders { transform: translateX(-33.333%); }
-#slider-3:checked ~ .sliders-container .sliders { transform: translateX(-66.666%); }
+#slider-1:checked ~ .sliders-container .sliders {
+  transform: translateX(0);
+}
+#slider-2:checked ~ .sliders-container .sliders {
+  transform: translateX(-33.333%);
+}
+#slider-3:checked ~ .sliders-container .sliders {
+  transform: translateX(-66.666%);
+}
 
 #slider-1:checked ~ .dots label[for="slider-1"],
 #slider-2:checked ~ .dots label[for="slider-2"],
@@ -288,7 +299,7 @@ footer i:hover {
   position: absolute;
   top: 20vh;
   left: 50%;
-  transform: translateX(-50%) scale(0.80);
+  transform: translateX(-50%) scale(0.8);
   transform-origin: top center;
   max-width: 1200px;
   width: 90%;
@@ -349,15 +360,15 @@ footer i:hover {
 }
 
 .about-us-footer {
- display: flex;
- justify-content: space-between;
- align-items: center;
- background: var(--color-primary);
- padding: 1rem 2rem;
- margin-top: 0rem;
- border-radius: 0px;
- position: relative;
- z-index: 11; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-primary);
+  padding: 1rem 2rem;
+  margin-top: 0rem;
+  border-radius: 0px;
+  position: relative;
+  z-index: 11;
 }
 
 .shop-now-button {
@@ -422,7 +433,7 @@ footer i:hover {
 
 .checkout-button {
   background: var(--color-tertiary);
-  color: var(--color-white);  
+  color: var(--color-white);
 }
 
 .back-button:hover {
@@ -467,7 +478,7 @@ footer i:hover {
   grid-column: 1;
   grid-row: 2 / 4;
   width: 100%;
-  height:auto;
+  height: auto;
   max-height: 250px;
   object-fit: contain;
   background: var(--color-white);
@@ -538,7 +549,6 @@ footer i:hover {
   align-items: center;
   justify-content: center;
 }
-
 
 .amount-negative-button:hover,
 .amount-positive-button:hover {
@@ -613,7 +623,7 @@ footer i:hover {
 
 .size-buttons-details {
   display: flex;
-  gap: 1rem
+  gap: 1rem;
 }
 
 .price.del {
@@ -675,7 +685,7 @@ footer i:hover {
   position: absolute;
   top: 20vh;
   left: 50%;
-  transform: translateX(-50%) scale(0.80);
+  transform: translateX(-50%) scale(0.8);
   transform-origin: top center;
   max-width: 1200px;
   width: 90%;
@@ -775,7 +785,7 @@ footer i:hover {
   justify-content: center;
 }
 
-.cart-item-price, 
+.cart-item-price,
 .price-amount {
   color: var(--color-tertiary);
   font-size: 2rem;
