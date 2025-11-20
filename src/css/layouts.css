@@ -1,6 +1,5 @@
 @import url(_variables.css);
 
-
 /* HERO BACKGROUND IMAGES - 100vh EACH --- */
 .hero-container {
   position: relative;
@@ -10,11 +9,11 @@
 }
 
 .hero-container:target {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 .hero-background-image,
-.hero-background-image-2{
+.hero-background-image-2 {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -34,7 +33,7 @@
 }
 
 header {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -111,7 +110,7 @@ header .header-logo {
 }
 
 .register-button {
-  background: #BAE3F0;
+  background: #bae3f0;
   color: #014d49;
   border-radius: 25px;
 }
@@ -128,7 +127,7 @@ nav {
   background: var(--color-primary);
   max-height: 0;
   overflow: hidden;
-  transition:max-height .3s ease;
+  transition: max-height 0.3s ease;
   z-index: 25;
 }
 
@@ -140,7 +139,7 @@ nav a {
 }
 
 .mobile-view {
-  display:none;
+  display: none;
 }
 
 #menu-checkbox:checked ~ nav {
@@ -157,7 +156,7 @@ nav a {
 
 @media (max-width: 1080px) {
   .mobile-view {
-    display:block;
+    display: block;
   }
 }
 
@@ -202,7 +201,7 @@ nav a {
 }
 
 /* --- HIDES SUB-HEADER WHEN VIEWING ON SMALLER SCREENS --- */
-@media (min-width:1081px) {
+@media (min-width: 1081px) {
   .sub-header {
     display: flex;
   }
@@ -210,7 +209,7 @@ nav a {
 
 /* ### MAIN CONTENT LAYOUT ### */
 .hero-container:target ~ footer,
-.hero-container:has( ~ footer) {
+.hero-container:has(~ footer) {
   transform: translateY(0);
 }
 
@@ -270,7 +269,7 @@ nav a {
   position: absolute;
   top: 20vh;
   left: 50%;
-  transform: translateX(-50%) scale(0.80);
+  transform: translateX(-50%) scale(0.8);
   transform-origin: top center;
   max-width: 1200px;
   width: 90%;
@@ -298,7 +297,7 @@ nav a {
   position: absolute;
   top: 20vh;
   left: 50%;
-  transform: translateX(-50%) scale(0.80);
+  transform: translateX(-50%) scale(0.8);
   transform-origin: top center;
   max-width: 1200px;
   width: 90%;
@@ -365,7 +364,7 @@ nav a {
 }
 
 .product-details-price {
-  display: flex;;
+  display: flex;
   align-items: center;
   gap: 1rem;
 }
@@ -419,14 +418,13 @@ footer {
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--footer-gap);
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--footer-gap);
+  margin: 0 auto;
 }
-
 
 /* --- FORCING CORRECT PLACEMENT ON DIFFERENT SCREEN WIDTHS --- */
 @media (max-width: 1024px) {
